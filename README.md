@@ -17,7 +17,8 @@ Download & run
     ##
     # Interactive mode
     ##
-    curl -o wg-installer.sh https://raw.githubusercontent.com/jjinnee/wireguard-server-installer/main/install.sh && chmod +x wg-installer.sh && bash wg-installer.sh
+    curl -o wg-installer.sh https://raw.githubusercontent.com/jjinnee/wireguard-server-installer/main/install.sh \
+        && chmod +x wg-installer.sh && bash wg-installer.sh
     
     ##
     # No-interactive mode
