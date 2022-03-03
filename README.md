@@ -28,7 +28,7 @@ Download & run
     # SERVER_PORT=51820
     # PEER_COUNT=1
     ##
-    curl -o wg-installer.sh https://raw.githubusercontent.com/jjinnee/wireguard-server-installer/main/default.sh | bash
+    curl https://raw.githubusercontent.com/jjinnee/wireguard-server-installer/main/no-interactive.sh | bash
     
 You can start, stop, view, and remove with command.
 
