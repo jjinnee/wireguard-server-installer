@@ -14,7 +14,21 @@ There is no guarantee that it will work properly.
 
 Download & run
 
+    ##
+    # Interactive mode
+    ##
     curl -o wg-installer.sh https://raw.githubusercontent.com/jjinnee/wireguard-server-installer/main/install.sh && chmod +x wg-installer.sh && bash wg-installer.sh
+    
+    ##
+    # No-interactive mode
+    # -------------------
+    # DEFAULT_INTERFACE=$(ip route | sed -n 1p | awk '{print $5}')
+    # PUBLIC_SERVER_IP=$(curl -s ip-api.com)
+    # WIREGUARD_SUBNET="10.13.13.1/24"
+    # SERVER_PORT=51820
+    # PEER_COUNT=1
+    ##
+    curl -o wg-installer.sh https://raw.githubusercontent.com/jjinnee/wireguard-server-installer/main/default.sh | bash
     
 You can start, stop, view, and remove with command.
 
